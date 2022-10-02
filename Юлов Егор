@@ -1,0 +1,43 @@
+Номер 1
+a = [3, 0, 5, 0, 0, -4]
+b = []
+j=len(a)
+k=0
+for i in range (j):
+    if a[0] == 0:
+        k=k+1
+        a.pop(0)
+    else:
+        b.append (a[0])
+        a.pop(0)
+while k!=0:
+    b.append (0)
+    k-=1
+print (b)
+
+
+Номер 2
+a = input()
+a = a.split(' ')
+d = {}
+for word in a:
+    d[word] = d.get(word, 0) + 1
+print (d)
+
+
+Номер 3
+x=int(input())
+y=int(input())
+R=int(input())
+if ((x**2+y**2) > R**2):
+    print ("No")
+else:
+    print ("DA")
+
+
+
+Номер 4
+a = ['Никита', 'Евгений', 'Андрей', 'Роман', 'Егор']
+b = ['Нечаев', 'Нуромский', 'Родин', 'Рыженко', 'Юлов']
+c = [' '.join(x) for x in zip(a, b)]
+print(c)
