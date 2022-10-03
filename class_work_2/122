@@ -1,0 +1,7 @@
+def s (a):
+    b = []
+    for i in range (len(a)):
+        if ((a[i] > 10) or (a[i] < -10)):
+            b.append (a[i])
+    print (b)
+s([0,12,14,26,-12,6])
